@@ -1,0 +1,14 @@
+{% include '_includes/head.html' %}
+<body>
+  <header role="banner">{% include '_includes/header.html' %}</header>
+  <nav role="navigation">{% include '_includes/navigation.html' %}</nav>
+  <div id="main">
+    <div id="content">
+      {% block content %}{% endblock %}
+    </div>
+  </div>
+  <footer role="contentinfo">{% include '_includes/footer.html' %}</footer>
+  {% include '_includes/after_footer.html' %}
+</body>
+</html>
+
