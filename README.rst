@@ -1,7 +1,8 @@
 Octopress Theme for Pelican
 ===========================
 
-This is a theme for `Pelican`_ that looks like `Octopress`_ default theme.
+This is a theme for `Pelican`_ that looks like `Octopress`_ default theme. I wrote this
+theme for `my personal blog`_.
 
 Why use this theme?
 -------------------
@@ -38,4 +39,5 @@ Contribute
 
 .. _`Pelican`: http://getpelican.com
 .. _`Octopress`: http://octopress.org
+.. _`my personal blog`: http://blogs.skicelab.com/maurizio/
 .. _`the repository`: http://github.com/duilio/pelican-octopress-theme
