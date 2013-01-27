@@ -20,9 +20,9 @@
   <li><a href="{{ link }}">{{ title }}</a></li>
   {% endfor %}
   {% if DISPLAY_PAGES_ON_MENU %}
-  {% for page in PAGES %}
-  <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-  {% endfor %}
-  <!-- TODO: add categories here? -->
+    {% for page in PAGES %}
+      <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+    {% endfor %}
+    <!-- TODO: add categories here? -->
   {% endif %}
 </ul>
