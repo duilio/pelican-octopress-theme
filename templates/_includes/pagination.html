@@ -1,13 +1,14 @@
 <div class="pagination">
   {% if articles_page.has_next() %}
-  <a class="prev" href="{{ SITEURL }}/{{ page_name }}{{ articles_page.next_page_number() }}.html">&larr; Older</a>
+    <a class="prev" href="{{ SITEURL }}/{{ page_name }}{{ articles_page.next_page_number() }}.html">&larr; Older</a>
   {% endif %}
 
   {% if articles_page.has_previous() %}
-  {% if articles_page.previous_page_number() == 1 %}
-  <a class="next" href="{{ SITEURL }}/{{ page_name }}.html">Newer &rarr;</a>
-  {% else %}
-  <a class="next" href="{{ SITEURL }}/{{ page_name }}{{ articles_page.previous_page_number() }}.html">Newer &rarr;</a>
+    {% if articles_page.previous_page_number() == 1 %}
+      <a class="next" href="{{ SITEURL }}/{{ page_name }}.html">Newer &rarr;</a>
+    {% else %}
+      <a class="next" href="{{ SITEURL }}/{{ page_name }}{{ articles_page.previous_page_number() }}.html">Newer &rarr;</a>
+    {% endif %}
   {% endif %}
-  {% endif %}
+  <br />
 </div>
