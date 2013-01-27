@@ -6,8 +6,7 @@
     {% else %}
       <h1 class="entry-title">{{ article.title|striptags }}</h1>
     {% endif %}
-
-      {% include '_includes/article_infos.html' %}
+    {% include '_includes/article_infos.html' %}
 </header>
 
 {% if index %}
@@ -16,5 +15,5 @@
     <a rel="full-article" href="{{ SITEURL }}/{{ article.url }}">Read On &crarr;</a>
   </footer>
 {% else %}
-<div class="entry-content">{{ article.content }}</div>
+  <div class="entry-content">{{ article.content }}</div>
 {% endif %}
