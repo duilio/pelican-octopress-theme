@@ -3,11 +3,13 @@
     <h1>Recent Posts</h1>
     <ul id="recent_posts">
       {% for article in articles[:5] %}
-        <li class="post">
+      <li class="post">
           <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title|striptags }}</a>
-        </li>
+      </li>
       {% endfor %}
     </ul>
   </section>
-  {% include '_includes/github.html' %}
+  {% include '_includes/github.html' %}
+  {% include '_includes/social.html' %}
+  {% include '_includes/links.html' %}
 </aside>
