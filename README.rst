@@ -31,6 +31,14 @@ I've started writing this theme just for my blog and my blog required few templa
 features. If you want to add `XXX` please be free to fork this repository and submit a pull request,
 I'll be happy to merge it!
 
+Plugins
+-------
+
+- ``GITHUB_USER``: username
+- ``GITHUB_REPO_COUNT``: 5
+- ``GITHUB_SKIP_FORK``: False
+- ``GITHUB_SHOW_USER_LINK``: False
+
 Contribute
 ----------
 
