@@ -34,7 +34,10 @@ I'll be happy to merge it!
 Plugins
 -------
 
-- ``GITHUB_USER``: username
+This theme add a nice section on the sidebar with a list of GitHub repositories of the user.
+You can enable it by using these settings:
+
+- ``GITHUB_USER``: (required to enable) username
 - ``GITHUB_REPO_COUNT``: 5
 - ``GITHUB_SKIP_FORK``: False
 - ``GITHUB_SHOW_USER_LINK``: False
@@ -45,7 +48,16 @@ Contribute
 #. Fork `the repository`_ on Github
 #. Send a pull request
 
+
+Authors
+-------
+
+- `Maurizio Sambati`_: Initial porting of the theme.
+- `Geoffrey Lehée`_: GitHub plugin, some cleaning and some missing standard Pelican features (social plugins and links).
+
 .. _`Pelican`: http://getpelican.com
 .. _`Octopress`: http://octopress.org
 .. _`my personal blog`: http://blogs.skicelab.com/maurizio/
 .. _`the repository`: http://github.com/duilio/pelican-octopress-theme
+.. _`Maurizio Sambati`: https://github.com/duilio
+.. _`Geoffrey Lehée`: https://github.com/socketubs
