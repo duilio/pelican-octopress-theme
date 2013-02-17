@@ -1,3 +1,13 @@
 <p class="meta">
-  <time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.locale_date }}</time>
+  <span class="byline author vcard">
+    Posted by <span class="fn">{{ article.author }}</span>
+  </span>
+  {% include '_includes/article_time.html' %}
+  {% if article.tags %}
+  <span class="categories">
+    {% for tag in article.tags %}
+    <a class="category" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+    {% endfor %}
+  </span>
+  {% endif %}
 </p>
