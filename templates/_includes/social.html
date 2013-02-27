@@ -1,10 +1,11 @@
+
 {% if SOCIAL %}
     <section>
         <h1>Social</h2>
         <ul>
             <li><a href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" type="application/rss+xml" rel="alternate">RSS</a></li>
         {% for name, link in SOCIAL %}
-            <li><a href="{{ link }}">{{ name }}</a></li>
+            <li><a href="{{ link }}" target="_blank">{{ name }}</a></li>
         {% endfor %}
         </ul>
     </section>

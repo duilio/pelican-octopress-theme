@@ -31,6 +31,10 @@ html .gist .gist-file {
   position: relative;
   border: none;
   padding-top: image-height("code_bg.png") !important;
+  table{
+    width: 789px;
+    margin-bottom: 0;
+  }
   .gist-syntax {
     border-bottom: 0 !important;
     background: none !important;
