@@ -54,6 +54,7 @@ Authors
 
 - `Maurizio Sambati`_: Initial porting of the theme.
 - `Geoffrey Lehée`_: GitHub plugin, some cleaning and some missing standard Pelican features (social plugins and links).
+- `Ekin Ertaç`_: Open links in other window, add tags and categories.
 
 .. _`Pelican`: http://getpelican.com
 .. _`Octopress`: http://octopress.org
@@ -61,3 +62,4 @@ Authors
 .. _`the repository`: http://github.com/duilio/pelican-octopress-theme
 .. _`Maurizio Sambati`: https://github.com/duilio
 .. _`Geoffrey Lehée`: https://github.com/socketubs
+.. _`Ekin Ertaç`: https://github.com/ekinertac
