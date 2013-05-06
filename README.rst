@@ -46,7 +46,7 @@ This theme also allows sharing via Twitter, Google Plus, and Facebook.  To
 enable any of these, use the following settings:
 
 - ``TWITTER_USER``: ['username'|'']
-- ``GOOGLE_PLUS_ONE``: [True|False]
+- ``GOOGLE_PLUS_USER``: ['username'|'']
 - ``FACEBOOK_LIKE``: [True|False]
 
 Extra twitter options. Note: there are no defaults for these, so they must
@@ -58,6 +58,12 @@ be specified if ``TWITTER_USER`` is specified.  (Can this be fixed?)
 - ``TWITTER_TWEET_COUNT``: [3] number of latest tweets to show
 - ``TWITTER_SHOW_REPLIES``: ['true'|'false'] whether to list replies among latest tweets
 - ``TWITTER_SHOW_FOLLOWER_COUNT``: ['true'|'false'] show number of followers
+
+Extra google plus options.  Again, there are no defaults, so they should be
+specified if ``GOOGLE_PLUS_USER`` is specified.
+
+- ``GOOGLE_PLUS_ONE``: [True|False] show +1 button
+- ``GOOGLE_PLUS_HIDDEN``: [True|False] hide the google plus sidebar link.
 
 Contribute
 ----------
