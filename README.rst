@@ -45,10 +45,19 @@ You can enable it by using these settings:
 This theme also allows sharing via Twitter, Google Plus, and Facebook.  To
 enable any of these, use the following settings:
 
-- ``TWITTER_USER``: username
-- ``TWITTER_TWEET_BUTTON``: True
-- ``GOOGLE_PLUS_ONE``: True
-- ``FACEBOOK_LIKE``: True
+- ``TWITTER_USER``: ['username'|'']
+- ``GOOGLE_PLUS_ONE``: [True|False]
+- ``FACEBOOK_LIKE``: [True|False]
+
+Extra twitter options. Note: there are no defaults for these, so they must
+be specified if ``TWITTER_USER`` is specified.  (Can this be fixed?)
+
+- ``TWITTER_TWEET_BUTTON``: [True|False] show twitter tweet button
+- ``TWITTER_FOLLOW_BUTTON``: [True|False] show twitter follow button
+- ``TWITTER_LATEST_TWEETS``: [True|False] list latest tweets
+- ``TWITTER_TWEET_COUNT``: [3] number of latest tweets to show
+- ``TWITTER_SHOW_REPLIES``: ['true'|'false'] whether to list replies among latest tweets
+- ``TWITTER_SHOW_FOLLOWER_COUNT``: ['true'|'false'] show number of followers
 
 Contribute
 ----------
