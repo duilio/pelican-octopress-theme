@@ -1,0 +1,21 @@
+{% if TWITTER_USER %}
+<section>
+  {% if TWITTER_LATEST_TWEETS %}
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("{{TWITTER_USER}}", {{TWITTER_TWEET_COUNT}}, {{TWITTER_SHOW_REPLIES}});
+    });
+  </script>
+  <script src="{{ ROOT_URL }}/theme/js/twitter.js" type="text/javascript"> </script>
+  {% endif %}
+  {% if TWITTER_FOLLOW_BUTTON %}
+    <a href="http://twitter.com/{{ TWITTER_USER }}" class="twitter-follow-button" data-show-count="{{ TWITTER_SHOW_FOLLOWER_COUNT }}">Follow @{{ TWITTER_USER }}</a>
+  {% else %}
+    <p>Follow <a href="http://twitter.com/{{ TWITTER_USER }}">@{{ TWITTER_USER }}</a></p>
+  {% endif %}
+</section>
+{% endif %}
