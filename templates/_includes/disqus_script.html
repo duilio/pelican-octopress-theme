@@ -3,6 +3,7 @@
 	  {% if article %}
           var disqus_identifier = '{{ SITEURL }}/{{ article.url }}';
           var disqus_url = '{{ SITEURL }}/{{ article.url }}';
+	  var disqus_title = '{{ article.title }}';
 	  {% endif %}
 	  var disqus_shortname = '{{ DISQUS_SITENAME }}';
 	  (function() {
