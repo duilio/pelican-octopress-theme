@@ -7,13 +7,13 @@
   </ul>
   <script type="text/javascript">
     $.domReady(function(){
-      getTwitterFeed("{{TWITTER_USER}}", {{TWITTER_TWEET_COUNT}}, {{TWITTER_SHOW_REPLIES}});
+      getTwitterFeed("{{TWITTER_USER}}", {{TWITTER_TWEET_COUNT|default('5')}}, {{TWITTER_SHOW_REPLIES|default('false')}});
     });
   </script>
   <script src="{{ ROOT_URL }}/theme/js/twitter.js" type="text/javascript"> </script>
   {% endif %}
   {% if TWITTER_FOLLOW_BUTTON %}
-    <a href="http://twitter.com/{{ TWITTER_USER }}" class="twitter-follow-button" data-show-count="{{ TWITTER_SHOW_FOLLOWER_COUNT }}">Follow @{{ TWITTER_USER }}</a>
+    <a href="http://twitter.com/{{ TWITTER_USER }}" class="twitter-follow-button" data-show-count="{{ TWITTER_SHOW_FOLLOWER_COUNT|default('true') }}">Follow @{{ TWITTER_USER }}</a>
   {% else %}
     <p>Follow <a href="http://twitter.com/{{ TWITTER_USER }}">@{{ TWITTER_USER }}</a></p>
   {% endif %}

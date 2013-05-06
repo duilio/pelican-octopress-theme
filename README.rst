@@ -49,21 +49,19 @@ enable any of these, use the following settings:
 - ``GOOGLE_PLUS_USER``: ['username'|'']
 - ``FACEBOOK_LIKE``: [True|False]
 
-Extra twitter options. Note: there are no defaults for these, so they must
-be specified if ``TWITTER_USER`` is specified.  (Can this be fixed?)
+Extra twitter options: default values are shown
 
-- ``TWITTER_TWEET_BUTTON``: [True|False] show twitter tweet button
-- ``TWITTER_FOLLOW_BUTTON``: [True|False] show twitter follow button
-- ``TWITTER_LATEST_TWEETS``: [True|False] list latest tweets
-- ``TWITTER_TWEET_COUNT``: [3] number of latest tweets to show
-- ``TWITTER_SHOW_REPLIES``: ['true'|'false'] whether to list replies among latest tweets
-- ``TWITTER_SHOW_FOLLOWER_COUNT``: ['true'|'false'] show number of followers
+- ``TWITTER_TWEET_BUTTON``: ``False`` show twitter tweet button
+- ``TWITTER_FOLLOW_BUTTON``: ``False`` show twitter follow button
+- ``TWITTER_LATEST_TWEETS``: ``False`` list latest tweets
+- ``TWITTER_TWEET_COUNT``: ``3`` number of latest tweets to show
+- ``TWITTER_SHOW_REPLIES``: ``'false'`` whether to list replies among latest tweets
+- ``TWITTER_SHOW_FOLLOWER_COUNT``: ``'true'`` show number of followers
 
-Extra google plus options.  Again, there are no defaults, so they should be
-specified if ``GOOGLE_PLUS_USER`` is specified.
+Extra google plus options: default values are shown
 
-- ``GOOGLE_PLUS_ONE``: [True|False] show +1 button
-- ``GOOGLE_PLUS_HIDDEN``: [True|False] hide the google plus sidebar link.
+- ``GOOGLE_PLUS_ONE``: ``False`` show +1 button
+- ``GOOGLE_PLUS_HIDDEN``: ``False`` hide the google plus sidebar link.
 
 Contribute
 ----------
@@ -78,6 +76,7 @@ Authors
 - `Maurizio Sambati`_: Initial porting of the theme.
 - `Geoffrey Lehée`_: GitHub plugin, some cleaning and some missing standard Pelican features (social plugins and links).
 - `Ekin Ertaç`_: Open links in other window, add tags and categories.
+- `Jake Vanderplas`_: Work on Twitter, Google plus, Facebook, and Disqus plugins.
 
 .. _`Pelican`: http://getpelican.com
 .. _`Octopress`: http://octopress.org
@@ -86,3 +85,4 @@ Authors
 .. _`Maurizio Sambati`: https://github.com/duilio
 .. _`Geoffrey Lehée`: https://github.com/socketubs
 .. _`Ekin Ertaç`: https://github.com/ekinertac
+.. _`Jake Vanderplas`: https://github.com/jakevdp
