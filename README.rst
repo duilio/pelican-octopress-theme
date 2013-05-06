@@ -42,6 +42,14 @@ You can enable it by using these settings:
 - ``GITHUB_SKIP_FORK``: False
 - ``GITHUB_SHOW_USER_LINK``: False
 
+This theme also allows sharing via Twitter, Google Plus, and Facebook.  To
+enable any of these, use the following settings:
+
+- ``TWITTER_USER``: username
+- ``TWITTER_TWEET_BUTTON``: True
+- ``GOOGLE_PLUS_ONE``: True
+- ``FACEBOOK_LIKE``: True
+
 Contribute
 ----------
 
