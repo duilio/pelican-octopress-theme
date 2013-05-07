@@ -42,6 +42,10 @@ You can enable it by using these settings:
 - ``GITHUB_SKIP_FORK``: False
 - ``GITHUB_SHOW_USER_LINK``: False
 
+- ``SEARCH_BOX``: set to true to enable site search box
+- ``SITESEARCH``: [default: 'http://google.com/search'] search engine to which
+  search form should be pointed (optional)
+
 Contribute
 ----------
 
