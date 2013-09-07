@@ -123,17 +123,17 @@ a {
 
 /* line 74, ../../sass/base/_theme.scss */
 html {
-  background: #252525 url('/images/line-tile.png?1372787319') top left;
+  background: #252525 url('/theme/images/line-tile.png?1372787319') top left;
 }
 
 /* line 78, ../../sass/base/_theme.scss */
 body > div {
-  background: #f2f2f2 url('/images/noise.png?1372787319') top left;
+  background: #f2f2f2 url('/theme/images/noise.png?1372787319') top left;
   border-bottom: 1px solid #bfbfbf;
 }
 /* line 81, ../../sass/base/_theme.scss */
 body > div > div {
-  background: #f8f8f8 url('/images/noise.png?1372787319') top left;
+  background: #f8f8f8 url('/theme/images/noise.png?1372787319') top left;
   border-right: 1px solid #e0e0e0;
 }
 
@@ -780,11 +780,11 @@ body > header h2 {
 body > nav {
   position: relative;
   background-color: #cccccc;
-  background: url('/images/noise.png?1372787319'), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e0e0e0), color-stop(50%, #cccccc), color-stop(100%, #b0b0b0));
-  background: url('/images/noise.png?1372787319'), -webkit-linear-gradient(#e0e0e0, #cccccc, #b0b0b0);
-  background: url('/images/noise.png?1372787319'), -moz-linear-gradient(#e0e0e0, #cccccc, #b0b0b0);
-  background: url('/images/noise.png?1372787319'), -o-linear-gradient(#e0e0e0, #cccccc, #b0b0b0);
-  background: url('/images/noise.png?1372787319'), linear-gradient(#e0e0e0, #cccccc, #b0b0b0);
+  background: url('/theme/images/noise.png?1372787319'), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e0e0e0), color-stop(50%, #cccccc), color-stop(100%, #b0b0b0));
+  background: url('/theme/images/noise.png?1372787319'), -webkit-linear-gradient(#e0e0e0, #cccccc, #b0b0b0);
+  background: url('/theme/images/noise.png?1372787319'), -moz-linear-gradient(#e0e0e0, #cccccc, #b0b0b0);
+  background: url('/theme/images/noise.png?1372787319'), -o-linear-gradient(#e0e0e0, #cccccc, #b0b0b0);
+  background: url('/theme/images/noise.png?1372787319'), linear-gradient(#e0e0e0, #cccccc, #b0b0b0);
   border-top: 1px solid #f2f2f2;
   border-bottom: 1px solid #8c8c8c;
   padding-top: .35em;
@@ -974,7 +974,7 @@ body > nav ul {
 
 /* line 101, ../../sass/partials/_navigation.scss */
 .no-placeholder body > nav .search {
-  background: #f2f2f2 url('/images/search.png?1372787319') 0.3em 0.25em no-repeat;
+  background: #f2f2f2 url('/theme/images/search.png?1372787319') 0.3em 0.25em no-repeat;
   text-indent: 1.3em;
 }
 
@@ -1011,11 +1011,11 @@ body > nav ul {
 }
 /* line 112, ../../sass/partials/_navigation.scss */
 .maskImage a[rel=subscribe-rss], .maskImage a[rel=subscribe-rss]:after {
-  -webkit-mask-image: url('/images/rss.png?1372787319');
-  -moz-mask-image: url('/images/rss.png?1372787319');
-  -ms-mask-image: url('/images/rss.png?1372787319');
-  -o-mask-image: url('/images/rss.png?1372787319');
-  mask-image: url('/images/rss.png?1372787319');
+  -webkit-mask-image: url('/theme/images/rss.png?1372787319');
+  -moz-mask-image: url('/theme/images/rss.png?1372787319');
+  -ms-mask-image: url('/theme/images/rss.png?1372787319');
+  -o-mask-image: url('/theme/images/rss.png?1372787319');
+  mask-image: url('/theme/images/rss.png?1372787319');
   -webkit-mask-repeat: no-repeat;
   -moz-mask-repeat: no-repeat;
   -ms-mask-repeat: no-repeat;
@@ -1047,11 +1047,11 @@ body > nav ul {
 }
 /* line 112, ../../sass/partials/_navigation.scss */
 .maskImage a[rel=subscribe-email], .maskImage a[rel=subscribe-email]:after {
-  -webkit-mask-image: url('/images/email.png?1372787319');
-  -moz-mask-image: url('/images/email.png?1372787319');
-  -ms-mask-image: url('/images/email.png?1372787319');
-  -o-mask-image: url('/images/email.png?1372787319');
-  mask-image: url('/images/email.png?1372787319');
+  -webkit-mask-image: url('/theme/images/email.png?1372787319');
+  -moz-mask-image: url('/theme/images/email.png?1372787319');
+  -ms-mask-image: url('/theme/images/email.png?1372787319');
+  -o-mask-image: url('/theme/images/email.png?1372787319');
+  mask-image: url('/theme/images/email.png?1372787319');
   -webkit-mask-repeat: no-repeat;
   -moz-mask-repeat: no-repeat;
   -ms-mask-repeat: no-repeat;
@@ -1315,7 +1315,7 @@ p.meta + .sharing {
   text-align: right;
   font-size: 13px;
   line-height: 1.45em;
-  background: #073642 url('/images/noise.png?1372787319') top left !important;
+  background: #073642 url('/theme/images/noise.png?1372787319') top left !important;
   border-right: 1px solid #00232c !important;
   -webkit-box-shadow: #083e4b -1px 0 inset;
   -moz-box-shadow: #083e4b -1px 0 inset;
@@ -1373,7 +1373,7 @@ html .gist .gist-file .gist-meta {
   border: 1px solid #083e4b !important;
   color: #586e75;
   font-size: .7em !important;
-  background: #073642 url('/images/noise.png?1372787319') top left;
+  background: #073642 url('/theme/images/noise.png?1372787319') top left;
   line-height: 1.5em;
 }
 /* line 62, ../../sass/partials/_syntax.scss */
@@ -1408,7 +1408,7 @@ html .gist .gist-file .gist-meta a[href*=raw] {
 
 /* line 79, ../../sass/partials/_syntax.scss */
 pre {
-  background: #002b36 url('/images/noise.png?1372787319') top left;
+  background: #002b36 url('/theme/images/noise.png?1372787319') top left;
   -webkit-border-radius: 0.4em;
   -moz-border-radius: 0.4em;
   -ms-border-radius: 0.4em;
@@ -1466,7 +1466,7 @@ p pre code, li pre code {
   padding: .8em !important;
   overflow-x: auto;
   line-height: 1.45em;
-  background: #002b36 url('/images/noise.png?1372787319') top left !important;
+  background: #002b36 url('/theme/images/noise.png?1372787319') top left !important;
   color: #93a1a1 !important;
   /* Comment */
   /* Comment.Multiline */
@@ -1837,7 +1837,7 @@ figure.code .highlight {
   -webkit-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
   font-family: "Helvetica Neue", Arial, "Lucida Grande", "Lucida Sans Unicode", Lucida, sans-serif;
-  background: #aaaaaa url('/images/code_bg.png?1372787319') top repeat-x;
+  background: #aaaaaa url('/theme/images/code_bg.png?1372787319') top repeat-x;
   border: 1px solid #565656;
   border-top-color: #cbcbcb;
   border-left-color: #a5a5a5;
@@ -2122,7 +2122,7 @@ aside.sidebar:hover a:hover {
     -webkit-border-bottom-right-radius: 0.3em;
     border-bottom-right-radius: 0.3em;
     text-align: center;
-    background: #f8f8f8 url('/images/noise.png?1372787319') top left;
+    background: #f8f8f8 url('/theme/images/noise.png?1372787319') top left;
     border-bottom: 1px solid #e0e0e0;
     border-right: 1px solid #e0e0e0;
     content: "\00BB";
@@ -2264,11 +2264,11 @@ body > footer {
   color: #888888;
   text-shadow: #d9d9d9 0 1px;
   background-color: #cccccc;
-  background: url('/images/noise.png?1372787319'), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e0e0e0), color-stop(50%, #cccccc), color-stop(100%, #b0b0b0));
-  background: url('/images/noise.png?1372787319'), -webkit-linear-gradient(#e0e0e0, #cccccc, #b0b0b0);
-  background: url('/images/noise.png?1372787319'), -moz-linear-gradient(#e0e0e0, #cccccc, #b0b0b0);
-  background: url('/images/noise.png?1372787319'), -o-linear-gradient(#e0e0e0, #cccccc, #b0b0b0);
-  background: url('/images/noise.png?1372787319'), linear-gradient(#e0e0e0, #cccccc, #b0b0b0);
+  background: url('/theme/images/noise.png?1372787319'), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e0e0e0), color-stop(50%, #cccccc), color-stop(100%, #b0b0b0));
+  background: url('/theme/images/noise.png?1372787319'), -webkit-linear-gradient(#e0e0e0, #cccccc, #b0b0b0);
+  background: url('/theme/images/noise.png?1372787319'), -moz-linear-gradient(#e0e0e0, #cccccc, #b0b0b0);
+  background: url('/theme/images/noise.png?1372787319'), -o-linear-gradient(#e0e0e0, #cccccc, #b0b0b0);
+  background: url('/theme/images/noise.png?1372787319'), linear-gradient(#e0e0e0, #cccccc, #b0b0b0);
   border-top: 1px solid #f2f2f2;
   position: relative;
   padding-top: 1em;
