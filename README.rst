@@ -46,7 +46,7 @@ This theme also allows sharing via Twitter, Google Plus, and Facebook.  To
 enable any of these, use the following settings:
 
 - ``TWITTER_USER``: ['username'|'']
-- ``GOOGLE_PLUS_USER``: ['username'|'']
+- ``GOOGLE_PLUS_ID``: ['id'|'']
 - ``FACEBOOK_LIKE``: [True|False]
 
 Extra twitter options: default values are shown
