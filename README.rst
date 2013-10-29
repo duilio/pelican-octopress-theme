@@ -51,9 +51,9 @@ enable any of these, use the following settings:
 
 Extra twitter options: default values are shown
 
+- ``TWITTER_WIDGET_ID``: (required to enable feed) ID obtained from `twitter settings <https://twitter.com/settings/widgets>`_
 - ``TWITTER_TWEET_BUTTON``: ``False`` show twitter tweet button
 - ``TWITTER_FOLLOW_BUTTON``: ``False`` show twitter follow button
-- ``TWITTER_LATEST_TWEETS``: ``False`` list latest tweets
 - ``TWITTER_TWEET_COUNT``: ``3`` number of latest tweets to show
 - ``TWITTER_SHOW_REPLIES``: ``'false'`` whether to list replies among latest tweets
 - ``TWITTER_SHOW_FOLLOWER_COUNT``: ``'true'`` show number of followers
