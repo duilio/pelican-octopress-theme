@@ -10,7 +10,8 @@
   </ul>
   <script type="text/javascript">
     $.domReady(function(){
-      getTwitterFeed("{{TWITTER_USER}}", {{TWITTER_TWEET_COUNT|default('5')}}, {{_TWITTER_SHOW_REPLIES}});
+      // widget, domID, count (1-20), hyperlink urls + hash (true), don't show user photo / name (false), format date fn or string, show retweets or not, null, show links for reply, retweet, etc.
+      twitterFetcher.fetch('345690956013633536', 'tweets', {{TWITTER_TWEET_COUNT|default(5)}}, true, false, undefined, {{_TWITTER_SHOW_REPLIES}});
     });
   </script>
   <script src="{{ ROOT_URL }}/theme/js/twitter.js" type="text/javascript"> </script>
