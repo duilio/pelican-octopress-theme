@@ -77,6 +77,7 @@ Authors
 - `Geoffrey Lehée`_: GitHub plugin, some cleaning and some missing standard Pelican features (social plugins and links).
 - `Ekin Ertaç`_: Open links in other window, add tags and categories.
 - `Jake Vanderplas`_: Work on Twitter, Google plus, Facebook, and Disqus plugins.
+- `Nicholas Terwoord`_: Additional fixes for Twitter, Google plus, and site search
 
 .. _`Pelican`: http://getpelican.com
 .. _`Octopress`: http://octopress.org
@@ -86,3 +87,4 @@ Authors
 .. _`Geoffrey Lehée`: https://github.com/socketubs
 .. _`Ekin Ertaç`: https://github.com/ekinertac
 .. _`Jake Vanderplas`: https://github.com/jakevdp
+.. _`Nicholas Terwoord`: https://github.com/nt3rp
