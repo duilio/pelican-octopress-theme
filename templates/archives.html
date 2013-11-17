@@ -13,7 +13,7 @@
 			    {% for month, articles in date_year|groupby('date.month') %}
     				{% for article in articles %}
 	    				<article>
-		    				<h1><a href="{{ article.url }}">{{ article.title }}</a></h1>
+                            <h1><a href="{{ SITE_URL }}/{{ article.url }}">{{ article.title }}</a></h1>
 			    			<time datetime="{{ article.date }}" pubdate>
 				    			<span class="month">{{ article.date.strftime('%B')[:3] }}</span> 
 					    		<span class="day">{{ article.date.strftime('%d') }}</span> 
