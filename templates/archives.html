@@ -8,27 +8,51 @@
     	</header>
 
     	<div id="blog-archives">
-	    	{% for year, date_year in dates|groupby('date.year') %}
-		    	<h2>{{ year }}</h2>
-			    {% for month, articles in date_year|groupby('date.month') %}
+        {% if NEWEST_FIRST_ARCHIVES %}
+        	{% for year, date_year in dates|groupby('date.year')|reverse %}
+	        	<h2>{{ year }}</h2>
+		        {% for month, articles in date_year|groupby('date.month')|reverse %}
     				{% for article in articles %}
-	    				<article>
-		    				<h1><a href="{{ article.url }}">{{ article.title }}</a></h1>
-			    			<time datetime="{{ article.date }}" pubdate>
-				    			<span class="month">{{ article.date.strftime('%B')[:3] }}</span> 
-					    		<span class="day">{{ article.date.strftime('%d') }}</span> 
-						    	<span class="year">{{ article.date.strftime('%Y') }}</span> 
+        				<article>
+	        				<h1><a href="{{ article.url }}">{{ article.title }}</a></h1>
+		        			<time datetime="{{ article.date }}" pubdate>
+			        			<span class="month">{{ article.date.strftime('%B')[:3] }}</span> 
+				        		<span class="day">{{ article.date.strftime('%d') }}</span> 
+					        	<span class="year">{{ article.date.strftime('%Y') }}</span> 
     						</time>
-	    					<footer>
-		    					<span class="categories">posted in 
-			    					<a class='category' href='{{ SITEROOT }}/{{ article.category.url }}'>{{ article.category }}</a>
-				    				{{ tag }}
-					    		</span>
+        					<footer>
+	        					<span class="categories">posted in 
+		        					<a class='category' href='{{ SITEROOT }}/{{ article.category.url }}'>{{ article.category }}</a>
+			        				{{ tag }}
+				        		</span>
     						</footer>
-	    				</article>
-		    		{% endfor %}
-			    {% endfor %}
+        				</article>
+	        		{% endfor %}
+		        {% endfor %}
+    		{% endfor %}        
+        {% else %}
+        	{% for year, date_year in dates|groupby('date.year') %}
+	        	<h2>{{ year }}</h2>
+		        {% for month, articles in date_year|groupby('date.month') %}
+    				{% for article in articles %}
+        				<article>
+	        				<h1><a href="{{ article.url }}">{{ article.title }}</a></h1>
+		        			<time datetime="{{ article.date }}" pubdate>
+			        			<span class="month">{{ article.date.strftime('%B')[:3] }}</span> 
+				        		<span class="day">{{ article.date.strftime('%d') }}</span> 
+					        	<span class="year">{{ article.date.strftime('%Y') }}</span> 
+    						</time>
+        					<footer>
+	        					<span class="categories">posted in 
+		        					<a class='category' href='{{ SITEROOT }}/{{ article.category.url }}'>{{ article.category }}</a>
+			        				{{ tag }}
+				        		</span>
+    						</footer>
+        				</article>
+	        		{% endfor %}
+		        {% endfor %}
     		{% endfor %}
+        {% endif %}
 	    </div>
     </article>
 </div>
