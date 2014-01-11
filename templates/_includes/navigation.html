@@ -22,6 +22,12 @@
     {% for page in PAGES %}
       <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
     {% endfor %}
-    <!-- TODO: add categories here? -->
+    {% if DISPLAY_CATEGORIES_ON_MENU %}
+    {% for cat, null in categories %}
+    <li {% if cat == category %}class="active"{% endif %}>
+    <a href="{{ SITEURL }}/{{ cat.url }}">{{ cat | capitalize }}</a>
+    </li>
+    {% endfor %}
+    {% endif %}
   {% endif %}
 </ul>
