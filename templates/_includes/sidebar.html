@@ -1,4 +1,9 @@
 <aside class="sidebar">
+  {% if SIDEBAR_IMAGE %}
+  <section>
+	  <img src="{{ SITEURL }}/{{ SIDEBAR_IMAGE }}" alt="{{ SIDEBAR_IMAGE_ALT}}" width="{{SIDEBAR_IMAGE_WIDTH}}"/> 
+  </section>
+  {% endif %}
   <section>
     <h1>Recent Posts</h1>
     <ul id="recent_posts">

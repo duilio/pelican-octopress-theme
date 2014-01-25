@@ -63,6 +63,13 @@ Extra google plus options: default values are shown
 - ``GOOGLE_PLUS_ONE``: ``False`` show +1 button
 - ``GOOGLE_PLUS_HIDDEN``: ``False`` hide the google plus sidebar link.
 
+Sidebar image
+-------------
+
+- ``SIDEBAR_IMAGE``: Adds specified image to sidebar. Example value: "images/author_photo.jpg"
+- ``SIDEBAR_IMAGE_ALT``: Alternative text for sidebar image
+- ``SIDEBAR_IMAGE_WIDTH``: Width of sidebar image
+
 Contribute
 ----------
 
