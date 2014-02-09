@@ -7,14 +7,15 @@
   {% endif %}
 </ul>
 
-<!-- TODO: add search here
-<form action="{{ SITESEARCH }}" method="get">
+
+{% if SEARCH_BOX %}
+<form action="{{ SITESEARCH|default('http://google.com/search') }}" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:{{ SITEURL }}" />
+    <input type="hidden" name="q" value="site:{{SITEURL|replace('https://','')|replace('http://','') }}" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
--->
+{% endif %}
 
 <ul class="main-navigation">
   {% for title, link in MENUITEMS %}

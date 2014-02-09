@@ -70,6 +70,10 @@ Sidebar image
 - ``SIDEBAR_IMAGE_ALT``: Alternative text for sidebar image
 - ``SIDEBAR_IMAGE_WIDTH``: Width of sidebar image
 
+- ``SEARCH_BOX``: set to true to enable site search box
+- ``SITESEARCH``: [default: 'http://google.com/search'] search engine to which
+  search form should be pointed (optional)
+
 Contribute
 ----------
 
