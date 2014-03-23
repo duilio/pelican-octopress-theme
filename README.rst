@@ -73,6 +73,11 @@ Sidebar image
 - ``SEARCH_BOX``: set to true to enable site search box
 - ``SITESEARCH``: [default: 'http://google.com/search'] search engine to which
   search form should be pointed (optional)
+  
+QR Code generation
+-------------
+
+- ``QR_CODE``: set to true to enable the qr code generation for articles and pages by browser
 
 Contribute
 ----------
