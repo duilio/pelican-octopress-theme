@@ -1,9 +1,9 @@
 {% if QR_CODE %}
     {% if article %}
-    {% set divName = article.title|striptags %}
+    {% set divName = article.url|striptags|urlencode %}
     {% set url = article.url %}
     {% else %}
-    {% set divName = page.title|striptags %}
+    {% set divName = page.url|striptags|urlencode %}
     {% set url = page.url %}
     {% endif %}
     
