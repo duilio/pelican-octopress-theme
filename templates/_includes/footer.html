@@ -1,4 +1,7 @@
 <p>
-  Copyright &copy; 2013 - {{ AUTHOR }} -
+  {% set years = dates|groupby('date.year')|sort(reverse=False) %}
+  {% set sinceYear = years|first|first|default('2014') %}
+  {% set toYear = years|last|first|default('2014') %}
+  Copyright &copy; {% if sinceYear == toYear %} {{ sinceYear }} {% else %} {{ sinceYear }} - {{ toYear }} {% endif%} - {{ AUTHOR }} -
   <span class="credit">Powered by <a href="http://getpelican.com">Pelican</a></span>
 </p>
