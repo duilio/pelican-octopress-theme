@@ -63,6 +63,13 @@ Extra google plus options (default values are shown):
 - ``GOOGLE_PLUS_ONE``: ``False`` show +1 button
 - ``GOOGLE_PLUS_HIDDEN``: ``False`` hide the google plus sidebar link.
 
+Google Analytics
+-------------
+
+- ``GOOGLE_ANALYTICS``: "UA-XXXX-YYYY" to activate Google Analytics(classic)
+- ``GOOGLE_UNIVERSAL_ANALYTICS``: "UA-XXXX-Y" to activate Google Universal Analytics
+- ``GOOGLE_UNIVERSAL_ANALYTICS_COOKIEDOMAIN``: ``'auto'`` optional cookie domain setting for Google Universal Analytics
+
 Sidebar image
 -------------
 
