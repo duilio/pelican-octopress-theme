@@ -1,3 +1,4 @@
+{% if sidebar != "off" %}
 <aside class="sidebar">
   {% if SIDEBAR_IMAGE %}
   <section>
@@ -39,3 +40,4 @@
   {% include '_includes/twitter_sidebar.html' %}
   {% include '_includes/gplus_sidebar.html' %}
 </aside>
+{% endif %}
