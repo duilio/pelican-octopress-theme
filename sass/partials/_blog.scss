@@ -2,6 +2,7 @@ article {
   padding-top: 1em;
   a { @extend .force-wrap; }
   header {
+    overflow: hidden;
     position: relative;
     padding-top: 2em;
     padding-bottom: 1em;
