@@ -9,7 +9,9 @@
     {% endif %}
       <p class="meta">
         {% include '_includes/article_time.html' %}
+        {% if SHOW_DISQUS_COMMENT_COUNT %}
         {% if DISQUS_SITENAME %} | <a href="{{ SITEURL }}/{{ article.url }}#disqus_thread">Comments</a>{% endif %}
+        {% endif %}
       </p>
 </header>
 
