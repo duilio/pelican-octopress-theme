@@ -7,7 +7,10 @@
     {% else %}
       <h1 class="entry-title">{{ article.title|striptags }}</h1>
     {% endif %}
-      <p class="meta">{% include '_includes/article_time.html' %}</p>
+      <p class="meta">
+        {% include '_includes/article_time.html' %}
+        {% if DISQUS_SITENAME %} | <a href="{{ SITEURL }}/{{ article.url }}#disqus_thread">Comments</a>{% endif %}
+      </p>
 </header>
 
 {% if index %}
