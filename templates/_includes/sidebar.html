@@ -1,11 +1,27 @@
+{% set all_asides = ['image', 'recentpost', 'categories', 'tags', 'github', 'social', 'links', 'twitter', 'gplus'] %}
+{% if page %}
+  {% if page.asides is defined %}
+    {% set asides = page.asides.split(",") %}
+  {% else %}
+    {% set asides = PAGE_ASIDES|default(all_asides) %}
+  {% endif %}
+{% elif article %}
+  {% if article.asides is defined %}
+    {% set asides = article.asides.split(",") %}
+  {% else %}
+    {% set asides = ARTICLE_ASIDES|default(all_asides) %}
+  {% endif %}
+{% else %}
+  {% set asides = INDEX_ASIDES|default(all_asides) %}
+{% endif %}
+
 <aside class="sidebar">
-  {% include '_includes/asides/image.html' %}
-  {% include '_includes/asides/recentpost.html' %}
-  {% include '_includes/asides/categories.html' %}
-  {% include '_includes/asides/tags.html' %}
-  {% include '_includes/asides/github.html' %}
-  {% include '_includes/asides/social.html' %}
-  {% include '_includes/asides/links.html' %}
-  {% include '_includes/asides/twitter.html' %}
-  {% include '_includes/asides/gplus.html' %}
+  {% if asides %}
+    {% for aside in asides %}
+      {% set aside = aside.strip().replace(".html", "") %}
+      {% if aside %}
+        {% include '_includes/asides/' + aside + ".html" ignore missing %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
 </aside>
