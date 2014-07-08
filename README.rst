@@ -86,6 +86,14 @@ QR Code generation
 
 - ``QR_CODE``: set to true to enable the qr code generation for articles and pages by browser
 
+FeedBurner integration
+----------------------
+
+- ``FEED_FEEDBURNER``: set this to the part of your FeedBurner URL after the ``http://feeds.feedburner.com/`` to set the
+  displayed feed URL to your FeedBurner URL. This also disables generation of the RSS and ATOM tags, regardless of whether
+  you've set the ``FEED_RSS`` or ``FEED_ATOM`` variables. This way, you can arbitrarily set your generated feed URL while
+  presenting your FeedBurner URL to your users.
+
 Contribute
 ----------
 
