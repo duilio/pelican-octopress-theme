@@ -13,7 +13,7 @@
 
 
 {% if SEARCH_BOX %}
-<form action="{{ SITESEARCH|default('http://google.com/search') }}" method="get">
+<form action="{{ SITESEARCH|default('//google.com/search') }}" method="get">
   <fieldset role="search">
     {% if 'duckduckgo.com' in SITESEARCH|lower %}
     <input type="hidden" name="sites" value="{{SITEURL|replace('https://','')|replace('http://','') }}" />
