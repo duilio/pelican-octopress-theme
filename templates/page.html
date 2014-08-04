@@ -9,5 +9,14 @@
     </header>
     {{ page.content }}
   </article>
+
+  {% set comments = page.comments|default("off") %}
+  {% set comments = comments|string|lower|replace("true", "on")|replace("false", "off") %}
+  {% if comments != "off" and DISQUS_SITENAME and SITEURL %}
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite">{% include '_includes/disqus_thread.html' %}</div>
+  </section>
+  {% endif %}
 </div>
 {% endblock %}
