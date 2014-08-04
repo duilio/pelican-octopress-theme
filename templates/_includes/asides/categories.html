@@ -1,0 +1,11 @@
+{% if categories %}
+<section>
+    
+  <h1>Categories</h1>
+  <ul id="recent_posts">
+    {% for category, articles in categories %}
+      <li><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %} 

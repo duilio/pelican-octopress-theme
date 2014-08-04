@@ -1,0 +1,10 @@
+{% if SHOW_ARTICLE_NEIGHBORS %}
+<p class="meta">
+{% if article.prev_article %}
+  <a class="basic-alignment left" href="{{ SITEURL }}/{{ article.prev_article.url }}" title="Previous Post: {{ article.prev_article.title}}">&laquo; {{ article.prev_article.title }}</a>
+{% endif %}
+{% if article.next_article %}
+  <a class="basic-alignment right" href="{{ SITEURL }}/{{ article.next_article.url }}" title="Next Post: {{ article.next_article.title}}">{{ article.next_article.title }} &raquo;</a>
+{% endif %}
+</p>
+{% endif %}
