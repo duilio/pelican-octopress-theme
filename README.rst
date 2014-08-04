@@ -63,6 +63,10 @@ Extra google plus options (default values are shown):
 - ``GOOGLE_PLUS_ONE``: ``False`` show +1 button
 - ``GOOGLE_PLUS_HIDDEN``: ``False`` hide the google plus sidebar link.
 
+By default, comments are enabled for all articles and disabled for pages.
+To enable comments for a page, add ``Comments: on`` in page meta.
+To disable comments for an article, add ``Comments: off`` in article meta.
+
 Google Analytics
 -------------
 
@@ -93,6 +97,31 @@ FeedBurner integration
   displayed feed URL to your FeedBurner URL. This also disables generation of the RSS and ATOM tags, regardless of whether
   you've set the ``FEED_RSS`` or ``FEED_ATOM`` variables. This way, you can arbitrarily set your generated feed URL while
   presenting your FeedBurner URL to your users.
+
+Neighbor Articles
+-------------------
+
+- ``SHOW_ARTICLE_NEIGHBORS``: set this to ``True`` to show "Previous Post" and "Next Post" bellow article content in the article pages.
+  ``neighbors`` plugin is required for this feature.
+
+Disqus
+--------
+
+- ``SHOW_DISQUS_COMMENT_COUNT``: set this to ``True`` to show disqus comments count in article meta paragraph.
+
+Controlling Asides
+-------------------
+
+- ``ARTICLE_ASIDES``: a list of asides names, controls which asides and order to be displayed on articles.
+  If not set, all available asides will be shown.
+- ``PAGE_ASIDES``: just like above, but for pages.
+- ``INDEX_ASIDES``: just like above, but for the index page.
+
+Individual settings for article or page is available. Just add an ``asides`` in the corresponding article or page meta,
+the value is a list of asides names, separated by commas.
+
+Check ``templates/_includes/asides/`` to get the list of available asides, the asides name does not contain ``.html``.
+Example setting: ``ARTICLE_ASIDES = ['recentpost', 'categories', 'tags', 'recentcomment', 'github']``.
 
 Contribute
 ----------
