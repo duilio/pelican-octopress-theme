@@ -6,6 +6,10 @@
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
     ga('create', '{{GOOGLE_UNIVERSAL_ANALYTICS}}', '{{GOOGLE_UNIVERSAL_ANALYTICS_COOKIEDOMAIN|default("auto")}}');
+
+    {% if GOOGLE_ANALYTICS_DISPLAY_FEATURES %}
+    ga('require', 'displayfeatures');
+    {% endif %}
     ga('send', 'pageview');
     </script>
 {% elif GOOGLE_ANALYTICS %}
@@ -15,7 +19,11 @@
     _gaq.push(['_trackPageview']);
     (function() {
         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        {% if GOOGLE_ANALYTICS_DISPLAY_FEATURES %}
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        {% else %}
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        {% endif %}
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
 
