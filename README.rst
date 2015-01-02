@@ -102,6 +102,12 @@ medium.com like "X min read" feature. You need to activate the plugin
 
 - ``X_MIN_READ``: ``False``
 
+Favicon
+-------
+
+- ``FAVICON_FILENAME``: set to path of your favicon. The default is empty in
+  which case the template will use the hardcoded address ``favicon.png``.
+
 Contribute
 ----------
 
