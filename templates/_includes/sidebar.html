@@ -1,8 +1,17 @@
 <aside class="sidebar">
-  {% if SIDEBAR_IMAGE %}
-  <section>
-	  <img src="{{ SITEURL }}/{{ SIDEBAR_IMAGE }}" alt="{{ SIDEBAR_IMAGE_ALT}}" width="{{SIDEBAR_IMAGE_WIDTH}}"/> 
-  </section>
+  {% if AUTHOR_ABOUT %}
+    <section>
+      <h1>About</h1>
+      <p>
+        {% if SIDEBAR_IMAGE %}
+          <img src="{{ SITEURL }}/{{ SIDEBAR_IMAGE }}" alt="{{ SIDEBAR_IMAGE_ALT}}" width="{{SIDEBAR_IMAGE_WIDTH}}" style="margin-left: 1em; float: right"/>
+	  {{ AUTHOR_ABOUT }}
+	  <br clear="all">
+        {% else %}
+          {{ AUTHOR_ABOUT }}
+        {% endif %}
+      </p>
+    </section>
   {% endif %}
   <section>
     <h1>Recent Posts</h1>
@@ -14,24 +23,25 @@
       {% endfor %}
     </ul>
   </section>
-  {% if categories %}
+  {% if DISPLAY_CATEGORIES and categories %}
   <section>
-      
     <h1>Categories</h1>
     <ul id="recent_posts">
       {% for category, articles in categories %}
-        <li><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></li>
+	<li><a href="{{ SITEURL }}/{{ category.url }}">{{ category }} ({{ articles|count }})</a></li>
       {% endfor %}
     </ul>
   </section>
   {% endif %} 
 
+  {% if DISPLAY_TAGS and tags %}
   <section>
-  <h1>Tags</h1>
-  {% for tag, article in tags %}
-    <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %},{% endif %}
-  {% endfor %}
+    <h1>Tags</h1>
+    {% for tag, article in tags %}
+      <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %},{% endif %}
+    {% endfor %}
   </section>
+  {% endif %} 
 
   {% include '_includes/github.html' %}
   {% include '_includes/social.html' %}
