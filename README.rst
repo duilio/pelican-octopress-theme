@@ -63,6 +63,11 @@ Extra google plus options (default values are shown):
 - ``GOOGLE_PLUS_ONE``: ``False`` show +1 button
 - ``GOOGLE_PLUS_HIDDEN``: ``False`` hide the google plus sidebar link.
 
+medium.com like "X min read" feature. You need to activate the plugin
+``post_stats`` for this to work (default values are shown):
+
+- ``X_MIN_READ``: ``False``
+
 Google Analytics
 -------------
 
