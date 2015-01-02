@@ -63,11 +63,6 @@ Extra google plus options (default values are shown):
 - ``GOOGLE_PLUS_ONE``: ``False`` show +1 button
 - ``GOOGLE_PLUS_HIDDEN``: ``False`` hide the google plus sidebar link.
 
-medium.com like "X min read" feature. You need to activate the plugin
-``post_stats`` for this to work (default values are shown):
-
-- ``X_MIN_READ``: ``False``
-
 Google Analytics
 -------------
 
@@ -98,6 +93,14 @@ FeedBurner integration
   displayed feed URL to your FeedBurner URL. This also disables generation of the RSS and ATOM tags, regardless of whether
   you've set the ``FEED_RSS`` or ``FEED_ATOM`` variables. This way, you can arbitrarily set your generated feed URL while
   presenting your FeedBurner URL to your users.
+
+X min read
+----------
+
+medium.com like "X min read" feature. You need to activate the plugin
+``post_stats`` for this to work (default values are shown):
+
+- ``X_MIN_READ``: ``False``
 
 Contribute
 ----------
