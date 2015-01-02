@@ -109,6 +109,18 @@ Favicon
 - ``FAVICON_FILENAME``: set to path of your favicon. The default is empty in
   which case the template will use the hardcoded address ``favicon.png``.
 
+Main Navigation (menu bar)
+--------------------------
+
+- ``DISPLAY_PAGES_ON_MENU``: ``True`` show pages
+- ``DISPLAY_CATEGORIES_ON_MENU``: ``True`` show categories
+- ``DISPLAY_FEEDS_ON_MENU``: ``False`` show feed icons (on the very right side)
+- ``MENUITEMS``: ``()`` show static links (before categories)
+- ``MENUITEMS_MIDDLE``: ``()`` show static links (between pages and categories)
+  e.g.: ``MENUITEMS_MIDDLE = ( ('link1', '/static/file1.zip'), )``
+- ``MENUITEMS_AFTER``: ``()`` show static links (after categories)
+  e.g.: ``MENUITEMS_AFTER = ( ('link2', '/static/file2.pdf'), )``
+
 Contribute
 ----------
 
