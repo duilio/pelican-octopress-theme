@@ -76,6 +76,7 @@ Sidebar image
 - ``SIDEBAR_IMAGE``: Adds specified image to sidebar. Example value: "images/author_photo.jpg"
 - ``SIDEBAR_IMAGE_ALT``: Alternative text for sidebar image
 - ``SIDEBAR_IMAGE_WIDTH``: Width of sidebar image
+- ``AUTHOR_ABOUT``: ```` the specified ``SIDEBAR_IMAGE`` is only shown if this is filled.
 
 - ``SEARCH_BOX``: set to true to enable site search box
 - ``SITESEARCH``: [default: 'http://google.com/search'] search engine to which
@@ -93,6 +94,13 @@ FeedBurner integration
   displayed feed URL to your FeedBurner URL. This also disables generation of the RSS and ATOM tags, regardless of whether
   you've set the ``FEED_RSS`` or ``FEED_ATOM`` variables. This way, you can arbitrarily set your generated feed URL while
   presenting your FeedBurner URL to your users.
+
+Sidebar
+-------
+
+- ``DISPLAY_CATEGORIES``: ``False`` show categories
+- ``DISPLAY_TAGS``: ``False`` show tags
+- ``DISPLAY_FEEDS``: ``False`` show feeds in Social section
 
 Contribute
 ----------
