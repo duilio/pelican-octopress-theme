@@ -34,7 +34,12 @@
     <meta name="robots" content="noindex, nofollow" />
   {% endif %}
 
-  <link href="{{ SITEURL }}/favicon.png" rel="icon">
+  {% if FAVICON_FILENAME %}
+    <link href="{{ SITEURL }}/{{ FAVICON_FILENAME }}" rel="icon">
+  {% else %}
+    <link href="{{ SITEURL }}/favicon.png" rel="icon">
+  {% endif %}
+
   <link href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" media="screen, projection"
         rel="stylesheet" type="text/css">
 
