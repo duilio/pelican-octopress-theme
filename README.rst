@@ -69,6 +69,7 @@ Google Analytics
 - ``GOOGLE_ANALYTICS``: "UA-XXXX-YYYY" to activate Google Analytics(classic)
 - ``GOOGLE_UNIVERSAL_ANALYTICS``: "UA-XXXX-Y" to activate Google Universal Analytics
 - ``GOOGLE_UNIVERSAL_ANALYTICS_COOKIEDOMAIN``: ``'auto'`` optional cookie domain setting for Google Universal Analytics
+- ``GOOGLE_ANALYTICS_DISPLAY_FEATURES``: ``True`` to enable `Display Advertiser Features <https://support.google.com/analytics/answer/2444872?hl=en&utm_id=ad>`_. This setting works for both Classic Analytics and Universal Analytics.
 
 Sidebar image
 -------------
@@ -117,6 +118,7 @@ Authors
 - `Ekin Ertaç`_: Open links in other window, add tags and categories.
 - `Jake Vanderplas`_: Work on Twitter, Google plus, Facebook, and Disqus plugins.
 - `Nicholas Terwoord`_: Additional fixes for Twitter, Google plus, and site search
+- `Mortada Mehyar`_: Display advertising features for Google Analytics
 - ... and many others. `Check the contributors`_. 
 
 
@@ -129,4 +131,5 @@ Authors
 .. _`Ekin Ertaç`: https://github.com/ekinertac
 .. _`Jake Vanderplas`: https://github.com/jakevdp
 .. _`Nicholas Terwoord`: https://github.com/nt3rp
+.. _`Mortada Mehyar`: https://github.com/mortada
 .. _`Check the contributors`: https://github.com/duilio/pelican-octopress-theme/graphs/contributors
