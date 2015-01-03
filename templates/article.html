@@ -10,7 +10,9 @@
     </footer>
   </article>
 
-  {% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
+  {% set comments = article.comments|default("on") %}
+  {% set comments = comments|string|lower|replace("true", "on")|replace("false", "off") %}
+  {% if comments != "off" and DISQUS_SITENAME and SITEURL and article.status != "draft" %}
   <section>
     <h1>Comments</h1>
     <div id="disqus_thread" aria-live="polite">{% include '_includes/disqus_thread.html' %}</div>
