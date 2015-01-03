@@ -30,6 +30,10 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  {% if article and article.status == 'draft' %}
+    <meta name="robots" content="noindex, nofollow" />
+  {% endif %}
+
   <link href="{{ SITEURL }}/favicon.png" rel="icon">
   <link href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" media="screen, projection"
         rel="stylesheet" type="text/css">
