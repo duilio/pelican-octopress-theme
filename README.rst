@@ -94,6 +94,14 @@ FeedBurner integration
   you've set the ``FEED_RSS`` or ``FEED_ATOM`` variables. This way, you can arbitrarily set your generated feed URL while
   presenting your FeedBurner URL to your users.
 
+X min read
+----------
+
+medium.com like "X min read" feature. You need to activate the plugin
+``post_stats`` for this to work (default values are shown):
+
+- ``X_MIN_READ``: ``False``
+
 Contribute
 ----------
 
