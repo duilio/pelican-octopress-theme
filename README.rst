@@ -70,8 +70,8 @@ Google Analytics
 - ``GOOGLE_UNIVERSAL_ANALYTICS``: "UA-XXXX-Y" to activate Google Universal Analytics
 - ``GOOGLE_UNIVERSAL_ANALYTICS_COOKIEDOMAIN``: ``'auto'`` optional cookie domain setting for Google Universal Analytics
 
-Sidebar image
--------------
+Sidebar Settings
+----------------
 
 - ``SIDEBAR_IMAGE``: Adds specified image to sidebar. Example value: "images/author_photo.jpg"
 - ``SIDEBAR_IMAGE_ALT``: Alternative text for sidebar image
@@ -80,7 +80,10 @@ Sidebar image
 - ``SEARCH_BOX``: set to true to enable site search box
 - ``SITESEARCH``: [default: 'http://google.com/search'] search engine to which
   search form should be pointed (optional)
-  
+- ``HIDE_TAGS_IN_SIDEBAR``: set to true to disable tag display in the sidebar
+- ``HIDE_CATEGORIES_IN_SIDEBAR``: set to true to disable category display in
+                                  the sidebar
+
 QR Code generation
 -------------
 
@@ -117,7 +120,7 @@ Authors
 - `Ekin Ertaç`_: Open links in other window, add tags and categories.
 - `Jake Vanderplas`_: Work on Twitter, Google plus, Facebook, and Disqus plugins.
 - `Nicholas Terwoord`_: Additional fixes for Twitter, Google plus, and site search
-- ... and many others. `Check the contributors`_. 
+- ... and many others. `Check the contributors`_.
 
 
 .. _`Pelican`: http://getpelican.com

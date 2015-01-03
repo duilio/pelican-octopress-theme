@@ -1,7 +1,7 @@
 <aside class="sidebar">
   {% if SIDEBAR_IMAGE %}
   <section>
-	  <img src="{{ SITEURL }}/{{ SIDEBAR_IMAGE }}" alt="{{ SIDEBAR_IMAGE_ALT}}" width="{{SIDEBAR_IMAGE_WIDTH}}"/> 
+    <img src="{{ SITEURL }}/{{ SIDEBAR_IMAGE }}" alt="{{ SIDEBAR_IMAGE_ALT}}" width="{{SIDEBAR_IMAGE_WIDTH}}"/>
   </section>
   {% endif %}
   <section>
@@ -14,9 +14,9 @@
       {% endfor %}
     </ul>
   </section>
-  {% if categories %}
+  {% if categories and not HIDE_CATEGORIES_IN_SIDEBAR %}
   <section>
-      
+
     <h1>Categories</h1>
     <ul id="recent_posts">
       {% for category, articles in categories %}
@@ -24,14 +24,16 @@
       {% endfor %}
     </ul>
   </section>
-  {% endif %} 
+  {% endif %}
 
+  {% if not HIDE_TAGS_IN_SIDEBAR %}
   <section>
   <h1>Tags</h1>
   {% for tag, article in tags %}
     <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %},{% endif %}
   {% endfor %}
   </section>
+  {% endif %}
 
   {% include '_includes/github.html' %}
   {% include '_includes/social.html' %}
