@@ -1,4 +1,4 @@
-{% if DISPLAY_FEEDS_ON_MENU %}
+{% if DISPLAY_FEEDS_ON_MENU != False %}
 <ul class="subscription" data-subscription="rss">
   {% if FEED_FEEDBURNER %}
   <li><a href="http://feeds.feedburner.com/{{ FEED_FEEDBURNER }}" rel="subscribe-rss">RSS</a></li>

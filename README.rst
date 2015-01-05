@@ -114,7 +114,7 @@ Main Navigation (menu bar)
 
 - ``DISPLAY_PAGES_ON_MENU``: ``True`` show pages
 - ``DISPLAY_CATEGORIES_ON_MENU``: ``True`` show categories
-- ``DISPLAY_FEEDS_ON_MENU``: ``False`` show feed icons (on the very right side)
+- ``DISPLAY_FEEDS_ON_MENU``: ``True`` show feed icons (on the very right side)
 - ``MENUITEMS``: ``()`` show static links (before categories)
 - ``MENUITEMS_MIDDLE``: ``()`` show static links (between pages and categories)
   e.g.: ``MENUITEMS_MIDDLE = ( ('link1', '/static/file1.zip'), )``
