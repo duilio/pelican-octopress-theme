@@ -1,7 +1,11 @@
 <p class="meta">
   <span class="byline author vcard">
     Posted by <span class="fn">
-      <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+      {% if AUTHORS_SAVE_AS %}
+        <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+      {% else %}
+        {{ article.author }}
+      {% endif %}
     </span>
   </span>
   {% include '_includes/article_time.html' %}
