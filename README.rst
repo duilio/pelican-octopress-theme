@@ -95,6 +95,17 @@ FeedBurner integration
   you've set the ``FEED_RSS`` or ``FEED_ATOM`` variables. This way, you can arbitrarily set your generated feed URL while
   presenting your FeedBurner URL to your users.
 
+Isso self-hosted comments
+-------------------------
+
+`Isso`_ is intended to be a Free replacement for systems like Disqus. Because
+it is self-hosted, it gives you full control over the comments posted to your
+website.
+
+- ``ISSO_SITEURL``: (required to enable) set this to the URL of the server Isso
+  is being served from without a trailing slash. Example:
+  ``http://example.com``
+
 X min read
 ----------
 
@@ -139,3 +150,4 @@ Authors
 .. _`Nicholas Terwoord`: https://github.com/nt3rp
 .. _`Mortada Mehyar`: https://github.com/mortada
 .. _`Check the contributors`: https://github.com/duilio/pelican-octopress-theme/graphs/contributors
+.. _`Isso`: http://posativ.org/isso/
