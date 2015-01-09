@@ -63,6 +63,11 @@ Extra google plus options (default values are shown):
 - ``GOOGLE_PLUS_ONE``: ``False`` show +1 button
 - ``GOOGLE_PLUS_HIDDEN``: ``False`` hide the google plus sidebar link.
 
+Google AdSense Sidebar
+----------------------
+
+- ``GOOGLE_ADSENSE_CODE``: JavaScript `snippet <https://support.google.com/adsense/answer/181960>`_ to enable Google AdSense.
+
 Google Analytics
 -------------
 
@@ -81,7 +86,7 @@ Sidebar image
 - ``SEARCH_BOX``: set to true to enable site search box
 - ``SITESEARCH``: [default: 'http://google.com/search'] search engine to which
   search form should be pointed (optional)
-  
+
 QR Code generation
 -------------
 
@@ -125,7 +130,7 @@ Authors
 - `Jake Vanderplas`_: Work on Twitter, Google plus, Facebook, and Disqus plugins.
 - `Nicholas Terwoord`_: Additional fixes for Twitter, Google plus, and site search
 - `Mortada Mehyar`_: Display advertising features for Google Analytics
-- ... and many others. `Check the contributors`_. 
+- ... and many others. `Check the contributors`_.
 
 
 .. _`Pelican`: http://getpelican.com
