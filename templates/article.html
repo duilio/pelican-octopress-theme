@@ -10,7 +10,7 @@
     </footer>
   </article>
 
-  {% if SITEURL and article.status != "draft" %}
+  {% if (DISQUS_SITENAME or ISSO_SITEURL) and SITEURL and article.status != "draft" %}
   <section>
     <h1>Comments</h1>
     {% if ISSO_SITEURL %}
