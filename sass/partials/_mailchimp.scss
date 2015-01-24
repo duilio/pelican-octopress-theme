@@ -1,0 +1,28 @@
+.mailchimp {
+  background: $img-border top left repeat-x;
+  margin-top: 0.3em;
+  padding: { top: 1em; left: 0; }
+  .email {
+    font-size: 1.0em;
+    padding: 0.2em
+  }
+  .button {
+    background-color: $link-color;
+    &:hover {background-color: $link-color-hover}
+    border: 0 none;
+    border-radius:4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size:15px;
+    font-weight: bold;
+    height: 32px;
+    line-height: 32px;
+    margin: 10px 5px 10px 0;
+    padding: 0 22px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+    white-space: nowrap;
+    width: auto;}
+}

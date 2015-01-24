@@ -1,0 +1,14 @@
+{% if MAILCHIMP_FORM_ACTION %}
+<div class="mailchimp">
+  <form action="{{ MAILCHIMP_FORM_ACTION }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <label for="mce-EMAIL">{{ MAILCHIMP_CALL_TO_ACTION|default('Get more posts like this:') }}</label><br/>
+    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="{{ MAILCHIMP_EMAIL_PLACEHOLDER|default('email@domain.com') }}" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_c71a562300563c7a54790cdad_0c29aac367" tabindex="-1" value=""></div>
+    <div class="clear">
+      <input type="submit" value="{{MAILCHIMP_SUBSCRIBE_BUTTON|default('Subscribe')}}" name="subscribe" id="mc-embedded-subscribe" class="button">
+    </div>
+    <div id="mc_embed_signup_scroll"></div>
+  </form>
+</div
+{% endif %}

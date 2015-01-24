@@ -81,7 +81,17 @@ Sidebar image
 - ``SEARCH_BOX``: set to true to enable site search box
 - ``SITESEARCH``: [default: 'http://google.com/search'] search engine to which
   search form should be pointed (optional)
-  
+
+MailChimp
+--------------
+
+Add a [MailChimp](http://mailchimp.com/) registration form to the bottom of each article.
+
+- ``MAILCHIMP_FORM_ACTION``: URL to be called when the submit button is pressed, required.
+- ``MAILCHIMP_EMAIL_PLACEHOLDER``: placeholder for the email form field, default "email@example.com"
+- ``MAILCHIMP_SUBSCRIBE_BUTTON``: text shown on the subscribe button, default "Subscribe"
+- ``MAILCHIMP_CALL_TO_ACTION``: call-to-action to be shown above the form, default "Get more posts like this:"
+
 QR Code generation
 -------------
 
@@ -125,7 +135,7 @@ Authors
 - `Jake Vanderplas`_: Work on Twitter, Google plus, Facebook, and Disqus plugins.
 - `Nicholas Terwoord`_: Additional fixes for Twitter, Google plus, and site search
 - `Mortada Mehyar`_: Display advertising features for Google Analytics
-- ... and many others. `Check the contributors`_. 
+- ... and many others. `Check the contributors`_.
 
 
 .. _`Pelican`: http://getpelican.com
