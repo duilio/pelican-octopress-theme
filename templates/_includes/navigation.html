@@ -1,3 +1,4 @@
+{% if DISPLAY_FEEDS_ON_MENU|default(true) %}
 <ul class="subscription" data-subscription="rss">
   {% if FEED_FEEDBURNER %}
   <li><a href="http://feeds.feedburner.com/{{ FEED_FEEDBURNER }}" rel="subscribe-rss">RSS</a></li>
@@ -10,7 +11,7 @@
   {% endif %}
   {% endif %}
 </ul>
-
+{% endif %}
 
 {% if SEARCH_BOX %}
 <form action="{{ SITESEARCH|default('//google.com/search') }}" method="get">
@@ -33,12 +34,22 @@
     {% for page in PAGES %}
       <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
     {% endfor %}
-    {% if DISPLAY_CATEGORIES_ON_MENU %}
-    {% for cat, null in categories %}
-    <li {% if cat == category %}class="active"{% endif %}>
-    <a href="{{ SITEURL }}/{{ cat.url }}">{{ cat | capitalize }}</a>
-    </li>
+  {% endif %}
+  {% if MENUITEMS_MIDDLE %}
+    {% for title, link in MENUITEMS_MIDDLE %}
+      <li><a href="{{ link }}">{{ title }}</a></li>
     {% endfor %}
-    {% endif %}
+  {% endif %}
+  {% if DISPLAY_CATEGORIES_ON_MENU %}
+    {% for cat, null in categories %}
+      <li {% if cat == category %}class="active"{% endif %}>
+        <a href="{{ SITEURL }}/{{ cat.url }}">{{ cat | capitalize }}</a>
+      </li>
+    {% endfor %}
+  {% endif %}
+  {% if MENUITEMS_AFTER %}
+    {% for title, link in MENUITEMS_AFTER %}
+      <li><a href="{{ link }}">{{ title }}</a></li>
+    {% endfor %}
   {% endif %}
 </ul>
