@@ -14,12 +14,12 @@
 {% endif %}
 
 {% if SEARCH_BOX %}
-<form action="{{ SITESEARCH|default('//google.com/search') }}" method="get">
+<form action="{{ SITESEARCH|default('https://www.google.com/search') }}" method="get">
   <fieldset role="search">
     {% if 'duckduckgo.com' in SITESEARCH|lower %}
-    <input type="hidden" name="sites" value="{{SITEURL|replace('https://','')|replace('http://','') }}" />
+    <input type="hidden" name="sites" value="{{ SITEURL|replace('https://','')|replace('http://','') }}" />
     {% else %}
-    <input type="hidden" name="q" value="site:{{SITEURL|replace('https://','')|replace('http://','') }}" />
+    <input type="hidden" name="sitesearch" value="{{ SITEURL|replace('https://','')|replace('http://','') }}">
     {% endif %}
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
