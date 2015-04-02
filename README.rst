@@ -81,7 +81,7 @@ Sidebar image
 - ``SEARCH_BOX``: set to true to enable site search box
 - ``SITESEARCH``: [default: 'http://google.com/search'] search engine to which
   search form should be pointed (optional)
-  
+
 QR Code generation
 -------------
 
@@ -132,6 +132,38 @@ Main Navigation (menu bar)
 - ``MENUITEMS_AFTER``: ``()`` show static links (after categories)
   e.g.: ``MENUITEMS_AFTER = ( ('link2', '/static/file2.pdf'), )``
 
+Markup for Social Sharing
+-------------------------
+
+In order to specify page title, description, image and other metadata for
+customized social sharing (e.g.
+`Twitter cards <https://dev.twitter.com/cards/overview>`_), you can add
+the following metadata to each post:
+
+- ``title``: The title of the post. This is expected for any post.
+- ``description``: A long form description of the post.
+- ``social_image``: A path to an image, relative to ``SITEURL``. This image
+                    will show up next to the other information in social
+                    shares.
+- ``twitter_site``: A Twitter handle, e.g. ``@getpelican`` for the owner
+                    of the site.
+` ``twitter_creator``: A Twitter handle, e.g. ``@getpelican`` for the author
+                       of the post.
+
+In addition, you can provide a default post image (instead of setting
+``social_image`` in the post metadata), by setting ``SOCIAL_IMAGE`` in your
+``pelicanconf``.
+
+These can be used for social sharing on Google+, Twitter, and Facebook as
+well as provide more detailed page data for Google Search. In order
+to enable in each respective channel, your post metadata needs to specify:
+
+- ``title``: The title of the post. This is expected for any post.
+
+- ``use_schema_org: true``: For Google and Google+ specific meta tags.
+- ``use_open_graph: true``: For Facebook specific meta tags.
+- ``use_twitter_card: true``: For Twitter specific meta tags.
+
 Contribute
 ----------
 
@@ -148,7 +180,7 @@ Authors
 - `Jake Vanderplas`_: Work on Twitter, Google plus, Facebook, and Disqus plugins.
 - `Nicholas Terwoord`_: Additional fixes for Twitter, Google plus, and site search
 - `Mortada Mehyar`_: Display advertising features for Google Analytics
-- ... and many others. `Check the contributors`_. 
+- ... and many others. `Check the contributors`_.
 
 
 .. _`Pelican`: http://getpelican.com

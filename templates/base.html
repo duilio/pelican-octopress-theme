@@ -2,10 +2,17 @@
 <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
 <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+{% if article and article.use_schema_org %}
+<head itemscope itemtype="http://schema.org/Article">
+{% else %}
 <head>
+{% endif %}
   <meta charset="utf-8">
   <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
   <meta name="author" content="{{ AUTHOR }}">
+  {% if article and article.description %}
+  <meta name="description" content="{{ article.description }}" />
+  {% endif %}
 
   {% if FEED_FEEDBURNER %}
   <link href="http://feeds.feedburner.com/{{ FEED_FEEDBURNER }}" type="application/rss+xml" rel="alternate"
@@ -23,6 +30,10 @@
 
   {% if EXTRA_HEADER %}
     {{ EXTRA_HEADER }}
+  {% endif %}
+
+  {% if article %}
+  {% include '_includes/social_markup.html' %}
   {% endif %}
 
   <!-- http://t.co/dKP3o1e -->
