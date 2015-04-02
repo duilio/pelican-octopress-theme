@@ -164,6 +164,12 @@ to enable in each respective channel, your post metadata needs to specify:
 - ``use_open_graph: true``: For Facebook specific meta tags.
 - ``use_twitter_card: true``: For Twitter specific meta tags.
 
+Archive Title
+-------------
+
+- ``ARCHIVE_TITLE``: Custom page title for ``archives.html``. Default is
+  ``"Blog Archive"``.
+
 Contribute
 ----------
 
