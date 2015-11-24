@@ -106,6 +106,16 @@ website.
   is being served from without a trailing slash. Example:
   ``http://example.com``
 
+Disqus Identifier
+-----------------
+
+If you are migrated from wordpress or any CMS to pelican, the disqus identifier is different there. In pelican the disqus identifier is URL of an article. So you will lose Disqus discussion for that article because Disqus identifier for that article is changed. To override the disqus identifier of an article
+
+- ``disqus_identifier``: set this property in your article meta data. Set it to any unique string you want. It won’t be affected by the article URL.
+
+If you choose not to use ``disqus_identifier``, defaults article URL passes to Disqus as identifier.  
+
+
 X min read
 ----------
 
