@@ -14,12 +14,16 @@
 </header>
 
 {% if index %}
-  <div class="entry-content">{{ article.summary }}</div>
-  {% if article.summary != article.content %}
-  <footer>
-    <a rel="full-article" href="{{ SITEURL }}/{{ article.url }}">Read On &crarr;</a>
-  </footer>
-  {% endif %}
+    {% if INDEX_FULL_CONTENT %}
+        <div class="entry-content">{{ article.content }}</div>
+    {% else %}
+        <div class="entry-content">{{ article.summary }}</div>
+        {% if article.summary != article.content %}
+            <footer>
+                <a rel="full-article" href="{{ SITEURL }}/{{ article.url }}">Read On &crarr;</a>
+            </footer>
+        {% endif %}
+    {% endif %}
 {% else %}
-  <div class="entry-content">{{ article.content }}</div>
+    <div class="entry-content">{{ article.content }}</div>
 {% endif %}
