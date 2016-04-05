@@ -51,7 +51,7 @@
     <link href="{{ SITEURL }}/favicon.png" rel="icon">
   {% endif %}
 
-  <link href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" media="screen, projection"
+  <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR}}/css/{{ CSS_FILE }}" media="screen, projection"
         rel="stylesheet" type="text/css">
 
   <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic"
@@ -76,9 +76,9 @@
     </div>
   </div>
   <footer role="contentinfo">{% include '_includes/footer.html' %}</footer>
-  <script src="{{ SITEURL }}/theme/js/modernizr-2.0.js"></script>
-  <script src="{{ SITEURL }}/theme/js/ender.js"></script>
-  <script src="{{ SITEURL }}/theme/js/octopress.js" type="text/javascript"></script>
+  <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/modernizr-2.0.js"></script>
+  <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/ender.js"></script>
+  <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/octopress.js" type="text/javascript"></script>
   {% include '_includes/after_footer.html' %}
 </body>
 </html>
