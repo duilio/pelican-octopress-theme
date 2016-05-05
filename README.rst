@@ -82,6 +82,17 @@ Sidebar image
 - ``SITESEARCH``: [default: 'http://google.com/search'] search engine to which
   search form should be pointed (optional)
 
+Header image or background color
+--------------------------------
+
+Header background image or color can be configured using article metadata or
+global settings in the following order of preference:
+
+- ``header_cover`` - header background image. Configure as article metadata
+- ``header_color`` - header background color. Configure as article metadata
+- ``HEADER_COVER`` - global header background image setting
+- ``HEADER_COLOR`` - global header background color setting
+
 QR Code generation
 -------------
 
