@@ -66,7 +66,15 @@
   {% endif %}
 </head>
 
-<body>
+{% if page %}
+  {% set sidebar = page.sidebar|default("on") %}
+{% elif article %}
+  {% set sidebar = article.sidebar|default("on") %}
+{% else %}
+  {% set sidebar = "on" %}
+{% endif %}
+{% set sidebar = sidebar|string|lower|replace("true", "on")|replace("false", "off") %}
+<body {% if sidebar == "off" %} class="no-sidebar" {% endif %}>
   <header role="banner">{% include '_includes/header.html' %}</header>
   <nav role="navigation">{% include '_includes/navigation.html' %}</nav>
   <div id="main">
