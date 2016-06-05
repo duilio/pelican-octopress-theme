@@ -64,6 +64,10 @@
   {% if page and page.latex %}
     {{ page.latex }}
   {% endif %}
+
+  <script src="{{ SITEURL }}/theme/js/modernizr-2.0.js"></script>
+  <script src="{{ SITEURL }}/theme/js/ender.js"></script>
+  <script src="{{ SITEURL }}/theme/js/octopress.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -76,9 +80,6 @@
     </div>
   </div>
   <footer role="contentinfo">{% include '_includes/footer.html' %}</footer>
-  <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/modernizr-2.0.js"></script>
-  <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/ender.js"></script>
-  <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/octopress.js" type="text/javascript"></script>
   {% include '_includes/after_footer.html' %}
 </body>
 </html>
