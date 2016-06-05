@@ -67,7 +67,18 @@
 </head>
 
 <body>
-  <header role="banner">{% include '_includes/header.html' %}</header>
+  <header role="banner"
+    {% if article and article.header_cover %}
+        style="background-image: url('{{ article.header_cover }}')"
+    {% elif article and article.header_color %}
+        style="background-color: {{ article.header_color }}"
+    {% elif HEADER_COVER %}
+        style="background-image: url('{{ HEADER_COVER }}')"
+    {% elif HEADER_COLOR %}
+        style="background-color: {{ HEADER_COLOR }}"
+    {% endif %}
+  >
+  {% include '_includes/header.html' %}</header>
   <nav role="navigation">{% include '_includes/navigation.html' %}</nav>
   <div id="main">
     <div id="content">
