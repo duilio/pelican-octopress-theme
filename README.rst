@@ -63,6 +63,11 @@ Extra google plus options (default values are shown):
 - ``GOOGLE_PLUS_ONE``: ``False`` show +1 button
 - ``GOOGLE_PLUS_HIDDEN``: ``False`` hide the google plus sidebar link.
 
+Google AdSense Sidebar
+----------------------
+
+- ``GOOGLE_ADSENSE_CODE``: JavaScript `snippet <https://support.google.com/adsense/answer/181960>`_ to enable Google AdSense.
+
 Google Analytics
 -------------
 
