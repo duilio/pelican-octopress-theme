@@ -1,13 +1,13 @@
 {% extends "base.html" %}
-{% block title %}Blog Archive &mdash; {{ SITENAME }}{% endblock %}
+{% block title %}{{ ARCHIVE_TITLE|default('Blog Archive') }} &mdash; {{ SITENAME }}{% endblock %}
 {% block content %}
 <div>
-	<article role="article">
-    	<header>
-    		<h1 class="entry-title">Blog Archive</h1>
-    	</header>
+  <article role="article">
+      <header>
+        <h1 class="entry-title">{{ ARCHIVE_TITLE|default('Blog Archive') }}</h1>
+      </header>
 
-    	<div id="blog-archives">
+      <div id="blog-archives">
         {% for year, date_year in dates|groupby('date.year')|sort(reverse=NEWEST_FIRST_ARCHIVES) %}
             <h2>{{ year }}</h2>
             {% for month, articles in date_year|groupby('date.month')|sort(reverse=NEWEST_FIRST_ARCHIVES) %}
@@ -24,13 +24,13 @@
                                 <a class='category' href='{{ SITEURL }}/{{ article.category.url }}'>{{ article.category }}</a>
                                 {{ tag }}
                             </span>
-			    {% include '_includes/article_stats.html' %}
+                            {% include '_includes/article_stats.html' %}
                         </footer>
                     </article>
                 {% endfor %}
             {% endfor %}
         {% endfor %}
-	    </div>
+      </div>
     </article>
 </div>
 {% endblock %}

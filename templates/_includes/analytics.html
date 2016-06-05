@@ -5,7 +5,7 @@
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', '{{GOOGLE_UNIVERSAL_ANALYTICS}}', '{{GOOGLE_UNIVERSAL_ANALYTICS_COOKIEDOMAIN|default("auto")}}');
+    ga('create', '{{GOOGLE_UNIVERSAL_ANALYTICS}}', '{{GOOGLE_UNIVERSAL_ANALYTICS_COOKIEDOMAIN|default('auto')}}');
 
     {% if GOOGLE_ANALYTICS_DISPLAY_FEATURES %}
     ga('require', 'displayfeatures');
