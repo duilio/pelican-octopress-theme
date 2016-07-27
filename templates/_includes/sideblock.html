@@ -1,0 +1,8 @@
+{% if SIDEBLOCK_TITLE %}
+    <section>
+        <h1>{{ SIDEBLOCK_TITLE }}</h1>
+        <div>
+            {% if SIDEBLOCK_CONTENT %}{{ SIDEBLOCK_CONTENT }}{% endif %}
+        </div>
+    </section>
+{% endif %}

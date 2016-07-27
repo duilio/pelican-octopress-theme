@@ -14,6 +14,19 @@
 </header>
 
 {% if index %}
+<div class="byline_index">
+  <span class="byline author vcard">
+    Posted by <span class="fn">
+      {% if AUTHORS_SAVE_AS %}
+        <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+      {% else %}
+        {{ article.author }}
+      {% endif %}
+    </span>
+  </span>
+  {% include '_includes/article_time.html' %}
+</div>
+
   <div class="entry-content">{{ article.summary }}</div>
   {% if article.summary != article.content %}
   <footer>

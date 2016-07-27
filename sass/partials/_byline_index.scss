@@ -1,0 +1,16 @@
+.byline_index {
+  @extend .sans;
+  font-size: .85em;
+  padding-bottom: 1em;
+
+    .byline + time:before, time +time:before {
+      @extend .separator;
+    }
+
+}
+
+.separator {
+  content: "\2022 ";
+  padding: 0 .4em 0 .2em;
+  display: inline-block;
+ }

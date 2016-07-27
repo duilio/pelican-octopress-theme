@@ -5,8 +5,8 @@ article {
     overflow: hidden;
     position: relative;
     padding-top: 2em;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    margin-bottom: 0em;
     background: $img-border bottom left repeat-x;
     h1 {
       margin: 0;
@@ -24,7 +24,7 @@ article {
       }
     }
     @media only screen and (min-width: 768px) {
-      margin-bottom: 1.5em;
+      margin-bottom: 0em;
       padding-bottom: 1em;
       background: $img-border bottom left repeat-x;
     }
