@@ -2,7 +2,11 @@
   <script type="text/javascript">
     var disqus_shortname = '{{ DISQUS_SITENAME }}';
     {% if article %}
-    var disqus_identifier = '/{{ article.url }}';
+      {% if article.disqus_identifier %}
+          var disqus_identifier = '{{ article.disqus_identifier }}';
+      {% else %}
+          var disqus_identifier = '/{{ article.url }}';
+      {% endif %}
     var disqus_url = '{{ SITEURL }}/{{ article.url }}';
     var disqus_title = '{{ article.title|replace("'", "\\'") }}';
     {% endif %}
