@@ -1,10 +1,10 @@
 {% extends "base.html" %}
-{% block title %}Archive &ndash; {{ period[2] }} {{ period[1] }} {{ period[0]  }} &mdash; {{ SITENAME }}{% endblock %}
+{% block title %}{{ ARCHIVE_TITLE|default('Blog Archive') }} &ndash; {{ period[2] }} {{ period[1] }} {{ period[0]  }} &mdash; {{ SITENAME }}{% endblock %}
 {% block content %}
 <div>
 	<article role="article">
     	<header>
-    	  <h1 class="entry-title">Blog Archive &ndash; {{ period[2] }} {{ period[1] }} {{ period[0]  }}</h1>
+    	  <h1 class="entry-title">{{ ARCHIVE_TITLE|default('Blog Archive') }} &ndash; {{ period[2] }} {{ period[1] }} {{ period[0]  }}</h1>
     	</header>
 
     	<div id="blog-archives">
