@@ -182,6 +182,12 @@ Archive Title
 - ``ARCHIVE_TITLE``: Custom page title for ``archives.html``. Default is
   ``"Blog Archive"``.
 
+Full Content
+------------
+
+- ``INDEX_FULL_CONTENT``: Display full post content on the index page. Default
+  is ``False``.
+
 Contribute
 ----------
 
