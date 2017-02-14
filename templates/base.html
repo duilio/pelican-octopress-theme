@@ -64,6 +64,33 @@
   {% if page and page.latex %}
     {{ page.latex }}
   {% endif %}
+
+  <script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+  var ts = document.createElement('span')
+  ts.className = 'toggle-sidebar'
+  ts = document.getElementById('content').appendChild(ts);
+  ts.addEventListener('click', function(e) {
+    e.preventDefault();
+    body = document.getElementsByTagName('body')[0];
+    bodyClasses = body.classList.toggle('collapse-sidebar');
+  });
+  var sections = document.querySelectorAll('aside.sidebar > section');
+  if (sections.length > 1) {
+    for (index = 0; index < sections.length; index++) {
+      section = sections[index];
+      if ((sections.length >= 3) && index % 3 === 0) {
+        section.classList.add("first");
+      }
+      var count = ((index +1) % 2) ? "odd" : "even";
+      section.classList.add(count);
+    }
+  }
+  if (sections.length >= 3) {
+    document.querySelector('aside.sidebar').classList.add('thirds');
+  }
+});
+  </script>
   {% include '_includes/analytics.html' %}
 </head>
 
@@ -77,9 +104,6 @@
     </div>
   </div>
   <footer role="contentinfo">{% include '_includes/footer.html' %}</footer>
-  <script src="{{ SITEURL }}/theme/js/modernizr-2.0.js"></script>
-  <script src="{{ SITEURL }}/theme/js/ender.js"></script>
-  <script src="{{ SITEURL }}/theme/js/octopress.js" type="text/javascript"></script>
   {% include '_includes/after_footer.html' %}
 </body>
 </html>
