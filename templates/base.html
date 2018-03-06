@@ -53,6 +53,10 @@
 
   <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR}}/css/{{ CSS_FILE }}" media="screen, projection"
         rel="stylesheet" type="text/css">
+  {% if CUSTOM_CSS_FILE %}
+  <link href="{{ SITEURL }}/{{ CUSTOM_CSS_FILE }}" media="screen, projection"
+	rel="stylesheet" type="text/css">
+  {% endif %}
 
   <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic"
         rel="stylesheet" type="text/css">

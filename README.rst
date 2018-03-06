@@ -144,6 +144,12 @@ Main Navigation (menu bar)
 - ``MENUITEMS_AFTER``: ``()`` show static links (after categories)
   e.g.: ``MENUITEMS_AFTER = ( ('link2', '/static/file2.pdf'), )``
 
+Custom CSS
+----------
+
+- ``CUSTOM_CSS_FILE``: ``filename_path`` Specify a custom CSS file to be applied
+  to all pages, e.g.: ``CUSTOM_CSS_FILE = 'static/css/custom.css'``
+
 Markup for Social Sharing
 -------------------------
 
