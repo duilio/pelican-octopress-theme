@@ -33,6 +33,15 @@
   {% endfor %}
   </section>
 
+  <section>
+    <h1><a href="{{ SITEURL }}/authors.html">Authors</a></h1>
+    <ul id="authors_list">
+      {% for author, articles in authors|sort %}
+        <li><a href="{{ SITEURL }}/{{ author.url }}">{{ author.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </section>
+
   {% include '_includes/github.html' %}
   {% include '_includes/social.html' %}
   {% include '_includes/links.html' %}
