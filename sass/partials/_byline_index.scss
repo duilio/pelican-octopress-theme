@@ -3,10 +3,9 @@
   font-size: .85em;
   padding-bottom: 1em;
 
-    .byline + time:before, time +time:before {
-      @extend .separator;
-    }
-
+  .byline ~ time:before, .byline ~ .categories:before {
+    @extend .separator;
+  }
 }
 
 .separator {

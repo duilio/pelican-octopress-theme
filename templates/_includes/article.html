@@ -13,6 +13,7 @@
     </p>
 </header>
 
+{% if index %}
 <div class="byline_index">
   <span class="byline author vcard">
     Posted by <span class="fn">
@@ -26,7 +27,6 @@
   {% include '_includes/article_time.html' %}
 </div>
 
-{% if index %}
   <div class="entry-content">{{ article.summary }}</div>
   {% if article.summary != article.content %}
   <footer>
@@ -34,5 +34,8 @@
   </footer>
   {% endif %}
 {% else %}
+  <div class="byline_index">
+    {% include '_includes/article_infos.html' %}
+  </div>
   <div class="entry-content">{{ article.content }}</div>
 {% endif %}
