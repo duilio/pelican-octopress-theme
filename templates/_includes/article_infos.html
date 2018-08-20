@@ -2,9 +2,11 @@
   <span class="byline author vcard">
     Posted by <span class="fn">
       {% if AUTHORS_SAVE_AS %}
-        <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+        {% for author in article.authors %}
+          <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>{{ "," if not loop.last }}
+        {% endfor %}
       {% else %}
-        {{ article.author }}
+        {% for author in article.authors %}{{ author }}{% endfor %}
       {% endif %}
     </span>
   </span>
